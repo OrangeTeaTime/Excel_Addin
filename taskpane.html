@@ -1,0 +1,37 @@
+<!-- Copyright (c) Microsoft Corporation. All rights reserved. Licensed under the MIT License. -->
+<!-- This file shows how to design a first-run page that provides a welcome screen to the user about the features of the add-in. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Custom Filters Add In</title>
+
+    <script type="text/javascript" src="https://appsforoffice.microsoft.com/lib/1.1/hosted/office.js"></script>
+    <script src="taskpane.js"></script>
+    <link href="taskpane.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <header>
+        <h1>Custom Filter</h1>
+    </header>
+
+    <main>
+        <button id="get-tables">Get Tables</button>
+        <div>
+            <label for="tables">Select table</label>
+            <select name="tables" id="tables">
+                <option value="">Click Get Tables</option>
+            </select>
+        </div>
+        <button id="get-headers">Get Headers</button>
+        <ul id="headers"></ul>
+        <button id="apply-filters">Apply Filters</button>
+    </main>
+</body>
+
+</html>
